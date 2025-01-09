@@ -1,0 +1,78 @@
+# Theme
+theme:
+  name: material
+  custom_dir: docs/overrides
+  language: en
+  palette: 
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to system preference
+
+  features:
+    - navigation.instant            # Instant loading
+    - navigation.tabs               # Added Sections to the header
+    - navigation.top                # Added button "Back-to-top"
+    - navigation.sections           # Сorrect division into Sections
+    - navigation.indexes            # Correct display of Pages
+    - navigation.footer             # Navigation Footer
+
+  logo: assets/images/logotype.png
+  favicon: assets/images/favicon.png
+
+# Markdown extensions
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_css: 
+  - assets/css/extra.css
+  - assets/css/custom.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/omniwide
+      name: Omniwide Group on GitHub.com
+
+# Project information
+site_name: Omniwide Documentation
+site_url: https://anugas.github.io/
+
+nav:
+  - Home: 
+    - link: https://omniwide.org
+  - Knowledge Base:
+    - Start Here: 
+      - index.md
+    - OPSEC:
+        - OPSEC Intro: pages/opsec/1_opsecintro.md
+        - Security, Privacy & Anonymity: pages/opsec/2_securityprivacy.md
+        - Social Media: pages/opsec/3_socialmedia.md 
+        - Nation State Actors: pages/opsec/4_nationstates.md 
+        - Threat Model: pages/opsec/5_threatmodel.md
+        - Telemetry: pages/opsec/6_telemetry.md
