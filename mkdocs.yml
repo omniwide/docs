@@ -61,7 +61,7 @@ extra:
 
 # Project information
 site_name: Omniwide Documentation
-site_url: https://anugas.github.io/
+site_url: https://omniwide.github.io/docs
 
 nav:
   - Home: 
