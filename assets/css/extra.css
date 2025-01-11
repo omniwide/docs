@@ -1,0 +1,28 @@
+:root {
+
+    /* Primary color shades */
+    --md-primary-fg-color: #0285FF;
+    [data-md-color-scheme="slate"] {
+        --md-primary-fg-color: #14151A;
+    }
+
+    /* Accent color shades */
+    --md-accent-fg-color: #526CFE;
+
+    [data-md-color-scheme="slate"] {
+        --md-typeset-a-color: #5E8BDE;
+    }
+
+}
+
+/* Change height for logotype */
+.md-header__button.md-logo img {
+    fill: currentcolor;
+    display: block;
+    height: 1.05rem;
+}
+
+/* Сhange the value `opacity` to hide `site_name` */
+.md-header__topic {
+    opacity: 0;
+}
