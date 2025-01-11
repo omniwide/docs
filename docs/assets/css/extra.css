@@ -1,5 +1,5 @@
 :root {
-    
+
     /* Primary color shades */
     --md-primary-fg-color: #0285FF;
     [data-md-color-scheme="slate"] {
@@ -15,12 +15,14 @@
 
 }
 
+/* Change height for logotype */
 .md-header__button.md-logo img {
     fill: currentcolor;
     display: block;
     height: 1.05rem;
 }
 
+/* Сhange the value `opacity` to hide `site_name` */
 .md-header__topic {
     opacity: 0;
 }

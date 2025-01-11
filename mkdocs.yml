@@ -36,17 +36,24 @@ theme:
     - navigation.sections           # Сorrect division into Sections
     - navigation.indexes            # Correct display of Pages
     - navigation.footer             # Navigation Footer
-
+  
+  icon:
+    annotation: material/information-variant-circle
+    
   logo: assets/images/logotype.png
   favicon: assets/images/favicon.png
 
 # Markdown extensions
 markdown_extensions:
-  - attr_list
   - md_in_html
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.blocks.caption
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css: 
   - assets/css/extra.css
@@ -54,25 +61,39 @@ extra_css:
 
 extra:
   generator: false
+  status:
+    new: Recently Added
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/omniwide
-      name: Omniwide Group on GitHub.com
+      name: Omniwide Group on GitHub
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app
+      name: Omniwide Group on Bluesky
 
 # Project information
 site_name: Omniwide Documentation
 site_url: https://omniwide.github.io/docs
 
 nav:
-  - Home: 
-    - link: https://omniwide.org
+  - Home: https://omniwide.org
   - Knowledge Base:
     - Start Here: 
       - index.md
     - OPSEC:
-        - OPSEC Intro: pages/opsec/1_opsecintro.md
-        - Security, Privacy & Anonymity: pages/opsec/2_securityprivacy.md
-        - Social Media: pages/opsec/3_socialmedia.md 
-        - Nation State Actors: pages/opsec/4_nationstates.md 
-        - Threat Model: pages/opsec/5_threatmodel.md
-        - Telemetry: pages/opsec/6_telemetry.md
+        - OPSEC Intro: opsec/opsecintro.md
+        - Security, Privacy & Anonymity: opsec/securityprivacy.md
+        - Social Media: opsec/socialmedia.md 
+        - Nation State Actors: opsec/nationstates.md 
+        - Threat Model: opsec/threatmodel.md
+        - Telemetry: opsec/telemetry.md
+        - Encryption: opsec/encryption.md
+        - Social Engineering: opsec/socialengineering.md
+        - Physical Access: opsec/physicalaccess.md
+    - Network Security:
+        - Netsec Intro: netsec/netsecintro.md
+        - Firewalls: netsec/firewalls.md
+        - DNS: netsec/dns.md
+        - Browsers: netsec/browsers.md
+        - Routers: netsec/routers.md
+        - VPN: netsec/vpn.md
